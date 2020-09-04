@@ -15,11 +15,25 @@ public class NumericalOperations{
     
 
     //Challenge 2
-    String n ="1234";
-    int midpoint = n.length()/2;
-    String first = n.substring(0,midpoint);
-    String second = n.substring(midpoint);
-    System.out.println(second + first);
+    int n = 1234;
+    
+    int first = n % 10; 
+    n = n / 10;
+    
+    int second = n % 10; 
+    n = n / 10;
+  
+    int third = n % 10; 
+    n = n / 10;
+
+    int fourth= n % 10; 
+    n = n / 10;
+    
+    first= first*1000;
+    second= second*100;
+    third= third*10;
+
+    System.out.print(first+second+third+fourth);
 
 
 
